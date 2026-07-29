@@ -52,139 +52,115 @@ Throughout the lab, Elastic Discover was used to search, filter, and correlate l
 
 # Investigation Walkthrough
 
-## 1. Lab Introduction
+## Screenshot 1 — Alert Triage With Elastic Introduction
 
-**Screenshot**
+![Alert Triage With Elastic Introduction](screenshots/01-Alert-Triage-With-Elastic-Introduction.png)
 
-`01-Alert-Triage-With-Elastic-Introduction.png`
-
-Introduces the Alert Triage With Elastic room and investigation objectives.
+Introduces the TryHackMe lab objectives and investigation scenario.
 
 ---
 
-## 2. Kibana Discover Interface
+## Screenshot 2 — Kibana Discover Interface
 
-**Screenshot**
+![Kibana Discover Interface](screenshots/02-Kibana-Discover-Interface.png)
 
-`02-Kibana-Discover-Interface.png`
-
-Opened Kibana Discover and became familiar with the investigation interface.
+Opened Kibana Discover and explored the Elastic investigation workspace.
 
 ---
 
-## 3. Web Logs Loaded
+## Screenshot 3 — Web Logs Loaded
 
-**Screenshot**
+![Web Logs Loaded](screenshots/03-Kibana-Web-Logs-Loaded.png)
 
-`03-Kibana-Weblogs-Loaded.png`
-
-Verified log ingestion and confirmed available web server events.
+Verified successful log ingestion and available web server events.
 
 ---
 
-## 4. Investigating Web Attacks (POST Requests)
+## Screenshot 4 — Web Attack POST Request Investigation
 
-**Screenshot**
+![Web Attack POST Request Investigation](screenshots/04-Web-Attack-POST-Request-Investigation.png)
 
-`04-Investigating-Web-Attacks-POST-Requests.png`
-
-Filtered suspicious POST requests to identify malicious web activity.
+Filtered HTTP POST requests to investigate suspicious web attack activity.
 
 ---
 
-## 5. GET Request Investigation
+## Screenshot 5 — GET Request Error Investigation
 
-**Screenshot**
+![GET Request Error Investigation](screenshots/05-GET-Request-Error-Investigation.png)
 
-`05-Elastic-GET-Requests-ErrorEE-Investigation.png`
-
-Investigated suspicious GET requests and server errors.
+Analyzed HTTP GET requests and server errors to identify suspicious traffic.
 
 ---
 
-## 6. Command Execution Investigation
+## Screenshot 6 — Command Execution Comparison
 
-**Screenshot**
-
-`07-Elastic-Command-Execution-Old-New.png`
+![Command Execution Comparison](screenshots/06-Command-Execution-Comparison.png)
 
 Compared process execution events to identify suspicious command activity.
 
 ---
 
-## 7. Web Attack Investigation Results
+## Screenshot 7 — Web Attack Investigation Results
 
-**Screenshot**
+![Web Attack Investigation Results](screenshots/07-Web-Attack-Investigation-Results.png)
 
-`08-Elastic-Web-Attack-Investigation-Answers.png`
-
-Completed the investigation questions related to the web attack scenario.
+Completed the investigation by answering the web attack analysis questions.
 
 ---
 
-## 8. Administrator Logon Investigation
+## Screenshot 8 — Administrator Logon Event 4624
 
-**Screenshot**
+![Administrator Logon Event 4624](screenshots/08-Administrator-Logon-Event-4624.png)
 
-`09-Elastic-Administrator-Logon-Event-4624.png`
-
-Investigated Windows Security Event ID 4624 to identify successful Administrator logon activity.
+Investigated Windows Security Event ID **4624** to identify successful Administrator logon activity.
 
 ---
 
-## 9. Task 4 Investigation Answers
+## Screenshot 9 — Task 4 Investigation Answers
 
-**Screenshot**
+![Task 4 Investigation Answers](screenshots/09-Task-4-Investigation-Answers.png)
 
-`10-Task4-Final-Answers.png`
-
-Completed Task 4 by correlating Windows Security logs and Sysmon events.
+Completed the Windows event investigation by correlating multiple security logs.
 
 ---
 
-## 10. Command-Line Investigation
+## Screenshot 10 — Command-Line Investigation Query
 
-**Screenshot**
+![Command-Line Investigation Query](screenshots/10-Command-Line-Investigation-Query.png)
 
-`11-Elastic-Command-Line-Investigation-Query.png`
-
-Built a search query to investigate suspicious command-line execution.
+Created a focused search query to investigate suspicious command-line execution.
 
 ---
 
-## 11. Sysmon Process Investigation
+## Screenshot 11 — Sysmon Process ID 964 Investigation
 
-**Screenshot**
+![Sysmon Process ID 964 Investigation](screenshots/11-Sysmon-Process-ID-964-Investigation.png)
 
-`11-Elastic-Sysmon-ProcessID-964.png`
-
-Investigated Sysmon Process Create events and identified Process ID **964** associated with suspicious activity.
+Analyzed Sysmon Process Create events and identified **Process ID 964** associated with suspicious activity.
 
 ---
 
-## 12. Security Group Management Investigation
+## Screenshot 12 — Security Group Management Investigation
 
-**Screenshot**
+![Security Group Management Investigation](screenshots/12-Security-Group-Management-Investigation.png)
 
-`13-Elastic-Security-Group-Management-Investigation.png`
-
-Correlated Windows Event ID 4732 with Sysmon events to identify modifications to security-enabled local groups.
+Correlated Windows Security Event ID **4732** with Sysmon events to investigate modifications to security-enabled local groups.
 
 ---
 
-## 13. PowerShell Investigation
+## Screenshot 13 — PowerShell 4104 Script Block Investigation
 
-**Screenshot**
+![PowerShell 4104 Script Block Investigation](screenshots/13-PowerShell-4104-Script-Block-Investigation.png)
 
-`14-Elastic-PowerShell-4104-Remote-Command-Investigation.png`
+Investigated PowerShell Script Block Logging (Event ID **4104**) to analyze executed PowerShell commands.
 
-Reviewed PowerShell Script Block Logging (Event ID 4104) to identify administrative commands including:
+---
 
-- whoami
-- whoami /priv
-- net localgroup Administrators
-- net group "Domain Admins" /domain
+## Screenshot 14 — PowerShell Remote Command Investigation
 
+![PowerShell Remote Command Investigation](screenshots/14-PowerShell-Remote-Command-Investigation.png)
+
+Examined PowerShell remote command execution and administrative commands used during the investigation, identifying privilege enumeration and potential privilege escalation.
 This activity demonstrated privilege enumeration and possible privilege escalation.
 
 ---
