@@ -1,4 +1,4 @@
-# Darwin--Elastic-Alert-Triage-Investigation-Lab
+# Darwin-SOC-Elastic-Alert-Triage-Investigation-Lab
 
 ## Overview
 
